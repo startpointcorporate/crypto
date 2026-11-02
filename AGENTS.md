@@ -1,5 +1,15 @@
 # AGENTS.md — Instructions for Codex
 
+## 0. Feature specifications and implementation scope
+
+Functional requirements are defined in two **normative** files under `works/`:
+
+- [`works/FEATURE-01-paper-trading.md`](works/FEATURE-01-paper-trading.md): **implement first** — public market data, spot arbitrage scanner, virtual venue wallets, simulated executions, capital top-ups, reporting and deterministic replay.
+- [`works/FEATURE-02-production-capital.md`](works/FEATURE-02-production-capital.md): **future phase only** — controlled live execution, exchange account reconciliation, real external deposits and risk safeguards. **Do not implement without a new explicit instruction.**
+
+Read the relevant feature file **in full** before planning or coding. Feature files specify the business scenarios and acceptance tests; this AGENTS.md supplies cross-cutting technical and architectural constraints. In a conflict, stop and describe it rather than silently changing business scope or violating safety invariants.
+
+
 Repository: `startpointcorporate/crypto`  
 Product: cross-exchange spot arbitrage, paper trading first.
 
